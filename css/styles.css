@@ -6,7 +6,7 @@ html {
 body {
     background-image: url('../images/cat.jpg');
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: top center;
     background-size: cover;
     /*background-color: rgb(118, 170, 187);*/
     background-blend-mode: luminosity;
@@ -14,8 +14,8 @@ body {
 }
 
 body, p {
-    font-size: 5em;
-    mix-blend-mode: overlay;
+    font-size: 5vw;
+    mix-blend-mode: hard-light;
 }
 
 h1 {
@@ -24,4 +24,10 @@ h1 {
 
 #container {
     padding: 15px;
+}
+
+@media only screen and (max-device-width: 768px) {
+    body, p {
+        font-size: 13vw;
+    }
 }
