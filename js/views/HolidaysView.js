@@ -28,9 +28,6 @@ define([
                     $(this).html(event.strftime('%D days %H hours left'));
                 });
             }, this);
-            var backgroundColor = Math.floor(Math.random()*16777215).toString(16);
-            $('body').css('background-color', '#'+backgroundColor);
-
         }
     });
     return HolidaysView;
