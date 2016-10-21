@@ -16,9 +16,9 @@ define([
 
         render: function () {
             var self = this,
-                today = new Date();
+                today = new Date(),
+                upcomingHoliday = this.collection.next(today);
             self.$el.html('');
-            var upcomingHoliday = this.collection.next(today);
             upcomingHoliday.each(function (holiday) {
                 self.$el.append(new HolidayView({
                     model: holiday
