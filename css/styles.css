@@ -16,6 +16,7 @@ body {
 body, p {
     font-size: 5vw;
     mix-blend-mode: hard-light;
+    word-wrap: break-word;
 }
 
 h1 {
@@ -28,6 +29,6 @@ h1 {
 
 @media only screen and (max-device-width: 768px) {
     body, p {
-        font-size: 13vw;
+        font-size: 12.5vw;
     }
 }
