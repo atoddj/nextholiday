@@ -11,6 +11,7 @@ body {
     /*background-color: rgb(118, 170, 187);*/
     background-blend-mode: luminosity;
     color: #fff;
+    background-attachment: fixed;
 }
 
 body, p {
