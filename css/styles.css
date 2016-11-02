@@ -4,7 +4,6 @@ html {
 }
 
 body {
-    background-image: url('../images/cat.jpg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;

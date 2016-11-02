@@ -28,13 +28,16 @@ define([
             date: 'October 10, 2016'
         }, {
             description: 'Veterans Day',
-            date: 'November 11, 2016'
+            date: 'November 11, 2016',
+            image: 'veterans-day.jpg'
         }, {
             description: 'Thanksgiving Day',
-            date: 'November 24, 2016'
+            date: 'November 24, 2016',
+            image: 'thanksgiving.jpg'
         }, {
             description: 'Christmas Day',
-            date: 'December 26, 2016'
+            date: 'December 26, 2016',
+            image: 'xmas.jpg'
         }
     ]);
 
