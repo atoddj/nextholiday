@@ -7,36 +7,36 @@ define([
     var initialize = function() {
         var holidays = new Holidays([{
             description: 'New Year\'s Day',
-            date: 'January 1, 2016'
+            date: 'January 2, 2017'
         }, {
             description: 'Martin Luther King, Jr. Day',
-            date: 'January 18, 2016'
+            date: 'January 16, 2017'
         }, {
-            description: 'George Washington\'s Birthday',
-            date: 'February 15, 2016'
+            description: 'Presidents\' Day',
+            date: 'February 20, 2017'
         }, {
             description: 'Memorial Day',
-            date: 'May 30, 2016'
+            date: 'May 29, 2017'
         }, {
             description: 'Independance Day',
-            date: 'July 4, 2016'
+            date: 'July 4, 2017'
         }, {
             description: 'Labor Day',
-            date: 'September 5, 2016'
+            date: 'September 4, 2017'
         }, {
             description: 'Columbus Day',
-            date: 'October 10, 2016'
+            date: 'October 9, 2017'
         }, {
-            description: 'Veterans Day',
-            date: 'November 11, 2016',
+            description: 'Veterans Day (Observed)',
+            date: 'November 10, 2017',
             image: 'veterans-day.jpg'
         }, {
             description: 'Thanksgiving Day',
-            date: 'November 24, 2016',
+            date: 'November 23, 2017',
             image: 'thanksgiving.jpg'
         }, {
             description: 'Christmas Day',
-            date: 'December 26, 2016',
+            date: 'December 25, 2017',
             image: 'xmas.jpg'
         }
     ]);
