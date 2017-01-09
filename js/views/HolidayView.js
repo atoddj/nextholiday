@@ -7,9 +7,7 @@ define([
 
 ], function(_, $, Backbone, Holiday) {
     var HolidayView = Backbone.View.extend({
-        events: {
-            'click li': 'toggleStrike'
-        },
+
         initialize: function(options) {
             if (!(options && options.model)) throw new Error('model is not defined');
         },

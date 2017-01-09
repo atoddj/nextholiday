@@ -25,7 +25,7 @@ define([
                 }).render().el);
                 var date = new Date(holiday.attributes.date);
                 $('#countdown').countdown(date, function(event) {
-                    $(this).html(event.strftime('%D days %H hours left'));
+                    $(this).html(event.strftime('%D day%!D %H hour%!H left'));
                 });
             }, this);
         }
