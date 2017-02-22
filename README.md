@@ -7,6 +7,7 @@ Personal project to know when my next day off of work is.
 * Integrate with an api to fetch the holidays
 * ~~Fix pluralization~~
 * Add bootstrap styles for better device support
+* Change photo depending on approaching holiday
 
 ## Usage
 
