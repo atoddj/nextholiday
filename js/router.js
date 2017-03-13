@@ -14,7 +14,8 @@ define([
   var AppRouter = Backbone.Router.extend({
     routes: {
       '': 'default',
-      'custom/:year/:month/:day': 'custom'
+      'custom/:year/:month/:day': 'custom',
+      'vacation': 'vacation'
     },
 
     default: function() {
@@ -72,7 +73,20 @@ define([
         collection: customDay
       }).render();
 
+    },
+
+    vacation: function() {
+        var vacationDate = new Holidays([{
+            description: 'Jones Family Vacation',
+            date: 'September 23, 2017'
+        }]);
+
+        new HolidaysView({
+            el: '#holiday',
+            collection: vacationDate
+        }).render();
     }
+
   });
 
   return {
