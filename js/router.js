@@ -15,7 +15,8 @@ define([
 		routes: {
 			'': 'default',
 			'custom/:year/:month/:day': 'custom',
-			'vacation': 'vacation'
+			'vacation': 'vacation',
+            'springbreak': 'springBreak'
 		},
 
 		default: function() {
@@ -78,6 +79,18 @@ define([
 			var vacationDate = new Holidays([{
 				description: 'Jones Family Vacation',
 				date: 'September 23, 2017'
+			}]);
+
+			new HolidaysView({
+				el: '#holiday',
+				collection: vacationDate
+			}).render();
+		},
+
+		springBreak: function() {
+			var vacationDate = new Holidays([{
+				description: 'Spring Break',
+				date: 'April 8, 2017'
 			}]);
 
 			new HolidaysView({
