@@ -10,11 +10,7 @@ define([
     next: function(today) {
         filtered = this.filter(function(holiday) {
           if(holiday.attributes.year) {
-            var year = parseInt(holiday.attributes.year),
-                month = parseInt(holiday.attributes.month) - 1,
-                day = parseInt(holiday.attributes.day);
-
-            var date = new Date(year, month, day);
+            var date = new Date(holiday.attributes.year, holiday.attributes.month-1, holiday.attributes.day);
           } else {
             var date = new Date(holiday.attributes.date);
           }

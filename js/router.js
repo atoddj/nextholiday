@@ -62,9 +62,9 @@ define([
     custom: function(year, month, day) {
       var customDay = new Holidays([{
         description: 'Custom',
-        year: year,
-        month: month,
-        day: day
+        year: parseInt(year),
+        month: parseInt(month),
+        day: parseInt(day)
       }]);
 
       new HolidaysView({
