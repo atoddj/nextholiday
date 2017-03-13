@@ -23,7 +23,11 @@ define([
                 self.$el.append(new HolidayView({
                     model: holiday
                 }).render().el);
-                var date = new Date(holiday.attributes.date);
+                if (holiday.attributes.date) {
+                    var date = new Date(holiday.attributes.date);
+                } else {
+                  var date = new Date(parseInt(holiday.attributes.year), parseInt(holiday.attributes.month)-1, parseInt(holiday.attributes.day));
+                }
                 $('#countdown').countdown(date, function(event) {
                     $(this).html(event.strftime('%D day%!D %H hour%!H left'));
                 });
