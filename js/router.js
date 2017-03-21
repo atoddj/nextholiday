@@ -16,7 +16,8 @@ define([
 			'': 'default',
 			'custom/:year/:month/:day': 'custom',
 			'vacation': 'vacation',
-            'springbreak': 'springBreak'
+            'springbreak': 'springBreak',
+            'graduation': 'graduation'
 		},
 
 		default: function() {
@@ -88,14 +89,26 @@ define([
 		},
 
 		springBreak: function() {
-			var vacationDate = new Holidays([{
+			var date = new Holidays([{
 				description: 'Spring Break',
 				date: 'April 8, 2017'
 			}]);
 
 			new HolidaysView({
 				el: '#holiday',
-				collection: vacationDate
+				collection: date
+			}).render();
+		},
+
+		graduation: function() {
+			var date = new Holidays([{
+				description: 'Graduation',
+				date: 'June 19, 2017'
+			}]);
+
+			new HolidaysView({
+				el: '#holiday',
+				collection: date
 			}).render();
 		}
 
