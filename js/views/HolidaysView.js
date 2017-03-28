@@ -8,6 +8,7 @@ define([
 
 ], function(_, $, countdown, Backbone, HolidayView) {
 	var HolidaysView = Backbone.View.extend({
+        el: '#holiday',
 
 		initialize: function(options) {
 			if (!(options && options.collection)) throw new Error('collection is not specified');

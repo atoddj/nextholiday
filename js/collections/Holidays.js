@@ -7,6 +7,10 @@ define([
 	var Holidays = Backbone.Collection.extend({
 		model: Holiday,
 
+        initialize: function(options) {
+            this.url = options.url;
+        },
+
 		next: function(today) {
 			filtered = this.filter(function(holiday) {
 				var date;
