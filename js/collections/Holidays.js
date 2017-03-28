@@ -17,7 +17,7 @@ define([
 				}
 				if (date > today) {
 					return holiday;
-				};
+				}
 			});
 			return new Holidays(filtered[0]);
 		}
