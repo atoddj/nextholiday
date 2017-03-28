@@ -16,56 +16,56 @@ define([
 			'': 'default',
 			'custom/:year/:month/:day': 'custom',
 			'vacation': 'vacation',
-            'springbreak': 'springBreak',
-            'graduation': 'graduation'
+			'springbreak': 'springBreak',
+			'graduation': 'graduation'
 		},
 
-        addToView: function(collection) {
-            collection.fetch({
-                success:function() {
-                    new HolidaysView({
-                        collection: collection
-                    }).render();
-                }
-            });
-        },
+		addToView: function(collection) {
+			collection.fetch({
+				success: function() {
+					new HolidaysView({
+						collection: collection
+					}).render();
+				}
+			});
+		},
 
-        default: function() {
-            var date = new Holidays({
-                url: 'js/json/us_holidays.json'
-            });
-            this.addToView(date);
-        },
+		default: function() {
+			var date = new Holidays({
+				url: 'js/json/us_holidays.json'
+			});
+			this.addToView(date);
+		},
 
 		vacation: function() {
-            var date = new Holidays({
-                url: 'js/json/vacation.json'
-            });
-            this.addToView(date);
+			var date = new Holidays({
+				url: 'js/json/vacation.json'
+			});
+			this.addToView(date);
 		},
 
 		springBreak: function() {
 			var date = new Holidays({
-                url: 'js/json/springbreak.json'
-            });
-            this.addToView(date);
+				url: 'js/json/springbreak.json'
+			});
+			this.addToView(date);
 		},
 
 		graduation: function() {
 			var date = new Holidays({
-                url: 'js/json/graduation.json'
-            });
-            this.addToView(date);
+				url: 'js/json/graduation.json'
+			});
+			this.addToView(date);
 		},
 
-        custom: function(year, month, day) {
+		custom: function(year, month, day) {
 			var date = new Holidays([{
 				description: 'Custom',
 				year: parseInt(year),
 				month: parseInt(month),
 				day: parseInt(day)
 			}]);
-            this.addToView(date);
+			this.addToView(date);
 		}
 
 	});
