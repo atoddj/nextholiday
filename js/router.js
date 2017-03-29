@@ -17,7 +17,8 @@ define([
 			'custom/:year/:month/:day': 'custom',
 			'vacation': 'vacation',
 			'springbreak': 'springBreak',
-			'graduation': 'graduation'
+			'graduation': 'graduation',
+            '*notfound': 'notFound'
 		},
 
 		addToView: function(collection) {
@@ -66,7 +67,13 @@ define([
 				day: parseInt(day)
 			}]);
 			this.addToView(date);
-		}
+		},
+
+        notFound: function() {
+            $('#holiday').html('<h1>404 - Page not found</h1>');
+            $('#countdown').html('');
+            $('body').css('background-image', 'url("images/404.jpg")');
+        }
 
 	});
 
