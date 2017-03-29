@@ -71,7 +71,7 @@ define([
 
         notFound: function() {
             $('#holiday').html('<h1>404 - Page not found</h1>');
-            $('#countdown').html('');
+            $('#countdown').countdown('stop').html('');
             $('body').css('background-image', 'url("images/404.jpg")');
         }
 
