@@ -66,7 +66,9 @@ define([
 				month: parseInt(month),
 				day: parseInt(day)
 			}]);
-			this.addToView(date);
+            new HolidaysView({
+                collection: date
+            }).render();
 		},
 
         notFound: function() {
