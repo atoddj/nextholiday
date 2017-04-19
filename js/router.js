@@ -18,7 +18,8 @@ define([
 			'vacation': 'vacation',
 			'springbreak': 'springBreak',
 			'graduation': 'graduation',
-            '*notfound': 'notFound'
+			'ironmaiden':'ironmaiden',
+			'*notfound': 'notFound'
 		},
 
 		addToView: function(collection) {
@@ -55,6 +56,13 @@ define([
 		graduation: function() {
 			var date = new Holidays({
 				url: 'js/json/graduation.json'
+			});
+			this.addToView(date);
+		},
+
+		ironmaiden: function() {
+			var date = new Holidays({
+				url: 'js/json/ironmaiden.json'
 			});
 			this.addToView(date);
 		},
