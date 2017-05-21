@@ -16,7 +16,6 @@ define([
 			'': 'default',
 			'custom/:year/:month/:day': 'custom',
 			'vacation': 'vacation',
-			'springbreak': 'springBreak',
 			'graduation': 'graduation',
 			'ironmaiden':'ironmaiden',
 			'*notfound': 'notFound'
@@ -42,13 +41,6 @@ define([
 		vacation: function() {
 			var date = new Holidays({
 				url: 'js/json/vacation.json'
-			});
-			this.addToView(date);
-		},
-
-		springBreak: function() {
-			var date = new Holidays({
-				url: 'js/json/springbreak.json'
 			});
 			this.addToView(date);
 		},
