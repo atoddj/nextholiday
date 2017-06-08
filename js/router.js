@@ -17,7 +17,7 @@ define([
 			'custom/:year/:month/:day': 'custom',
 			'vacation': 'vacation',
 			'graduation': 'graduation',
-			'ironmaiden':'ironmaiden',
+			'lastday':'lastday',
 			'*notfound': 'notFound'
 		},
 
@@ -52,9 +52,9 @@ define([
 			this.addToView(date);
 		},
 
-		ironmaiden: function() {
+		lastday: function() {
 			var date = new Holidays({
-				url: 'js/json/ironmaiden.json'
+				url: 'js/json/lastday.json'
 			});
 			this.addToView(date);
 		},
