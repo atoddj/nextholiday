@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background: url("/images/pattern.png"),linear-gradient(to left,#6587c5,#dc9224);
+    background: url("images/pattern.png"),linear-gradient(to left,#6587c5,#dc9224);
     background-blend-mode: luminosity;
     color: #fff;
 }
