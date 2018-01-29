@@ -16,6 +16,7 @@ define([
       '': 'default',
       'custom/:year/:month/:day': 'custom',
       'springbreak': 'springbreak',
+      'retirement': 'retirement',
       '*notfound': 'notFound'
     },
 
@@ -39,6 +40,13 @@ define([
     springbreak: function() {
       var date = new Holidays({
         url: 'js/json/springbreak.json'
+      });
+      this.addToView(date);
+    },
+
+    retirement: function() {
+      var date = new Holidays({
+        url: 'js/json/retirement.json'
       });
       this.addToView(date);
     },
