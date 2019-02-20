@@ -16,6 +16,7 @@ define([
       '': 'default',
       'custom/:year/:month/:day': 'custom',
       'fiesta': 'fiesta',
+      'vacation': 'vacation',
       '*notfound': 'notFound'
     },
 
@@ -39,6 +40,13 @@ define([
     fiesta: function() {
       var date = new Holidays({
         url: 'js/json/fiesta.json'
+      });
+      this.addToView(date);
+    },
+
+    vacation: function() {
+      var date = new Holidays({
+        url: 'js/json/vacation.json'
       });
       this.addToView(date);
     },
